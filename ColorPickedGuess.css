@@ -1,0 +1,17 @@
+body{
+	background: #232323;
+}
+h1{color:white;
+text-align:center;}
+.colorBox{
+	width:30%;
+	float:left;
+	margin:1.66%;
+	background:purple;
+	padding-bottom:30%;
+	border:10px
+}
+#container{
+	max-width:60%;
+	margin:0 auto;
+}
