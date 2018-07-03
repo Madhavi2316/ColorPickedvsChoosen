@@ -6,10 +6,12 @@ var colors=[
 	"rgb(2, 100, 245)",
 	"rgb(255, 255, 2)"
 ];
+var messageDisplay=document.querySelector("#message");
 var choose=document.querySelector("#pickColor");
 //assigning a color to test
 choose.textContent=colors[2];
 var pickedColor=colors[2];
+
 console.log(pickedColor);
 //selecting by class name
 var squares=document.querySelectorAll(".colorBox");
@@ -25,8 +27,21 @@ for(var i=0;i<squares.length;i++)
 		console.log(clickedColor);
 		if(clickedColor===pickedColor)
 		{
-			alert("correct");
+			changeColor(clickedColor);
+			messageDisplay.textContent="Correct";
 		}
-		else{alert("try agaign");}
+		else{
+			this.style.background="#232323";
+			messageDisplay.textContent="Try Again";
+			}
 	});
+}
+
+//change colors of sqaures when right color is picked
+function changeColor(color){
+	for(var i=0;i<squares.length;i++)
+	{
+		squares[i].style.background=color;
+		
+	}
 }
