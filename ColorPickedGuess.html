@@ -3,15 +3,20 @@
 <link href="ColorPickedGuess.css" rel="stylesheet" type="text/css" ></head>
 <body>
 
-<h1> Pick The Color : <span id="pickColor">RGB</span></h1>
-<h2><span id="message"></span><h2>
+<h1> Pick The Color : <br><span id="pickColor">RGB</span><br> Game On</h1>
+<div id="stripe">	
+	<button id="reset">New Colors </button>
+	<span id="message"></span>
+	<button id="easy">Easy</button>
+	<button id="hard" class="selected">Hard</button>
+</div>
 <div id="container">
-	<div class="colorBox"></div>
-	<div class="colorBox"></div>
-	<div class="colorBox"></div>
-	<div class="colorBox"></div>
-	<div class="colorBox"></div>
-	<div class="colorBox"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
+	<div class="colorBox" style="border-radius: 50px;"></div>
 <div>
 <script src="ColorPickedGuess.js"></script>
 </body>
